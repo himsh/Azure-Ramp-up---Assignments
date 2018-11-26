@@ -17,9 +17,9 @@ catch
  function printFizzBuzz()
  {
 
- if(!Is-Numeric($startNumber))
+ if($startNumber -ge $endNumber)
      {
-        Write-Output("Please enter numeric number")
+        Write-Output("Start number must be less than end number")
      }
 
       
