@@ -16,3 +16,4 @@ Select-AzureRmSubscription -SubscriptionName "Free Trial"
 
 New-AzureRmResourceGroupDeployment -Name StorageAccountDeployment -ResourceGroupName $ResourceGroupName `
 -TemplateFile "D:\Workspace\Github- Repos\Azure-Ramp-up-Assignments\ARM Templates\azurestorageaccountdeploy.json" 
+#-TemplateParameterFile ".\ARM Templates\azurestorageaccountdeploy.parameters.json"
