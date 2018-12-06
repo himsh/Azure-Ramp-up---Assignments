@@ -1,12 +1,8 @@
-﻿# Install Azure ARM
-Install-module AzureRM
+﻿# Install Azure ARM to use Azure Cmdlets, commenting for now as already installed.
+#Install-module AzureRM
 
-# login AzureRMAccount
+# login to the  AzureRMAccount to get the subscription
 login-azureRmaccount
 
 #set AzureRmContext
 Get-AzureRmContext
-
-# Get list of locations and select one.
-Get-AzureRmLocation | select Location 
-$location = "eastus"
