@@ -13,6 +13,17 @@
 
 Select-AzureRmSubscription -SubscriptionName "Free Trial"
 
+Get-AzureRmResourceGroup -Name  $ResourceGroupName -ErrorVariable notPresent -ErrorAction SilentlyContinue
+
+if ($notPresent)
+{
+  New-AzureRmResourceGroup -Name  $ResourceGroupName -Location $location
+}
+else
+{
+    # ResourceGroup exist
+}
+
 
 New-AzureRmResourceGroupDeployment -Name StorageAccountDeployment -ResourceGroupName $ResourceGroupName `
 -TemplateFile "D:\Workspace\Github- Repos\Azure-Ramp-up-Assignments\ARM Templates\azurestorageaccountdeploy.json" 
