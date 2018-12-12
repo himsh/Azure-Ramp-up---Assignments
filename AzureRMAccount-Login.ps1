@@ -6,3 +6,6 @@ login-azureRmaccount
 
 #set AzureRmContext
 Get-AzureRmContext
+
+#set Azure RM context 
+Set-AzureRmontext -SubscriptionID "73f4e20a-fbc9-40df-b43b-bf5253547da4"

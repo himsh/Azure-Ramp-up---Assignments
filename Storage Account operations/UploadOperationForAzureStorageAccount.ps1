@@ -13,6 +13,8 @@ function Upload-FileToAzureStorageContainer {
         $Force
     )
 
+    Set-AzureRmontext -SubscriptionID "73f4e20a-fbc9-40df-b43b-bf5253547da4"
+
     $ctx = New-AzureStorageContext -StorageAccountName $StorageAccountName -StorageAccountKey $StorageAccountKey
     if (!(Get-AzureStorageContainer -Context $ctx | Where-Object { $_.Name -eq $ContainerName })){
    

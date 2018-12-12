@@ -1,4 +1,6 @@
-﻿$count = 0
+﻿Set-AzureRmontext -SubscriptionID "73f4e20a-fbc9-40df-b43b-bf5253547da4"
+
+$count = 0
 
 
 try
@@ -53,7 +55,3 @@ catch
    
 printFizzBuzz  
      
-     
- function Is-Numeric ($Value) {
-    return $Value -match "^[\d\.]+$"
-}
