@@ -67,11 +67,11 @@ namespace FizzBuzzProblemFunction
 
 
             // Added this to check how to fetch the request body as Json
-            string requestBody = new StreamReader(req.Body).ReadToEnd();
-            dynamic data = JsonConvert.DeserializeObject(requestBody);
-            startNumber = data?.startNumber;
-            stopNumber = data?.stopNumber;
-            numbersInLine = data?.numbersInLine;
+            //string requestBody = new StreamReader(req.Body).ReadToEnd();
+            //dynamic data = JsonConvert.DeserializeObject(requestBody);
+            //startNumber = data?.startNumber;
+            //stopNumber = data?.stopNumber;
+            //numbersInLine = data?.numbersInLine;
 
           
 
